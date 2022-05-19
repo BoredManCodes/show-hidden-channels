@@ -48,7 +48,7 @@ function getDateFromSnowflake(number) {
       const decimal = parseInt(excerpt, 2);
       const unix = decimal + 1420070400000;
 
-      return new Date(unix).toLocaleString();
+      return new Date(unix).toLocaleString("en-UK");
    } catch (e) {
       console.error(e);
       return '(Failed to get date)';
