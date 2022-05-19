@@ -10,12 +10,13 @@ module.exports = React.memo((props) => {
             className='shc-notice-lock'
             src='/assets/755d4654e19c105c3cd108610b78d01c.svg'
          />
+		 
          <Text
             className='shc-locked-channel-text'
             color={Text.Colors.HEADER_PRIMARY}
             size={Text.Sizes.SIZE_32}
          >
-            This is a hidden channel.
+            #{props.channel.name} is a hidden channel.
          </Text>
          <Text
             className='shc-no-access-text'
